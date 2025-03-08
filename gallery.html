@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wheels and Deals</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("./images/background.png");
+            background-repeat: no-repeat;  
+            background-size: cover;  
+            background-position: center; 
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo a {
+            color:white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(14, 14, 80);
+            font-weight: 600;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--bg-color);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .nav-links {
+                
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links li {
+                margin-top: 0.4rem;
+                
+            }
+        }
+
+        .flex-container {
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 80px;
+        }
+
+        .flex-container h1 {
+            text-align: start;
+            font-weight: 600;
+            font-size: 35px;
+            color: rgb(250, 245, 245);
+            
+        }
+
+        .center-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 220px;
+            justify-items: center;
+            margin-top: 30px;
+        }
+
+        .center-cell {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aligned-image {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            object-fit: cover; 
+        }
+
+        .aligned-image:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .center-cell h3 {
+            margin-top: 15px;
+            font-size: 20px;
+            color: rgb(170, 169, 169);
+            transition: color 0.3s;
+        }
+
+        .center-cell h3:hover {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 690px) {
+            .flex-container h1 {
+                font-size: 25px;
+                margin-top: 1rem;
+            }
+
+            .center-table {
+                gap: 20px;
+            }
+
+            .center-cell h3 {
+                font-size: 16px;
+            }
+
+            .aligned-image {
+                max-width: 250px; 
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> 
+            <a href="Services"> The Wheels and Deals</a>
+        </div>
+     
+        <ul class="nav-links">     
+            <li><a href="./index.html">Home</a></li> 
+            <li><a href="./car reviews.html">Car Reviews</a></li>
+            <li><a href="./gallery.html">Gallery</a></li> 
+            <li><a href="./contact.html">Contact us</a></li> 
+            <li><a href="./special offer.html">Special Offer</a></li> 
+        </ul>
+    </nav>
+
+    <div class="flex-container">
+        <h1>The List of Cars</h1>
+
+        <div class="center-table">
+            <div class="center-cell">
+                <img src="./images/kutsi1.png" class="aligned-image">
+                <h3>Ford Ranger Raptor</h3>
+            </div>
+            <div class="center-cell">
+                <img src="./images/kutsi2.png" class="aligned-image">
+                <h3>Honda Civic</h3>
+            </div>
+            <div class="center-cell">
+                <img src="./images/kutsi3.png" class="aligned-image">
+                <h3>Toyota Hiace</h3>
+            </div>
+        </div>
+
+        <div class="center-table">
+            <div class="center-cell">
+                <img src="./images/kutsi4.png" class="aligned-image">
+                <h3>Ford Mustang</h3>
+            </div>
+            <div class="center-cell">
+                <img src="./images/kutsi5.png" class="aligned-image">
+                <h3>Nissan GTR</h3>
+            </div>
+            <div class="center-cell">
+                <img src="./images/kutsi6.png" class="aligned-image">
+                <h3>Corvette</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

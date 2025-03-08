@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wheels and Deals</title>
+
+   <style>
+       * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+       }
+
+        body {
+          background-image: url('./images/background.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          font-family: Arial, sans-serif;
+  
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(14, 14, 80);
+            font-weight: 600;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--bg-color);
+            transform: scale(1.1);
+        }
+        @media (max-width: 700px) {
+          .navbar {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+            .nav-links li {
+                margin-top:0.4rem;
+            }
+        }
+
+
+           
+        .offer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+        }
+
+        table {
+            width: 80%;
+            margin: 90px auto;
+            border-collapse: collapse;
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.4);
+            background-color: rgba(241, 240, 247, 0.9);
+            border-radius: 8px;
+        }
+
+        th, td {
+            padding: 20px;
+            text-align: left;
+            
+        }
+
+        th {
+            background-color: rgb(21, 7, 90);
+            color: white;
+            font-size: 24px;
+        }
+
+        td {
+            font-size: 18px;
+            color:black;
+        }
+
+       
+
+        @media (max-width: 768px) {
+            table {
+                width: 95%;
+            }
+
+            th, td {
+                font-size: 16px;
+                padding: 15px;
+            }
+        }
+
+   </style>
+</head>
+<body>
+
+   
+    <nav class="navbar">
+        <div class="logo"> 
+            <a href="special offer">The Wheels and Deals</a>
+        </div>
+        <ul class="nav-links">     
+            <li><a href="./index.html">Home</a></li> 
+            <li><a href="./car reviews.html">Car Reviews</a></li>
+            <li><a href="./gallery.html">Gallery</a></li> 
+            <li><a href="./contact.html">Contact us</a></li> 
+            <li><a href="./special offer.html">Special Offer</a></li> 
+        </ul>
+    </nav>
+
+
+    <section class="offer">
+        <table>
+            <thead>
+                <tr>
+                    <th>Offer</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. Car Customization Discount</td>
+                    <td>If you're in the business of car modifications, offer a discount on car customizations, such as custom wheels, wraps, or performance enhancements.</td>
+                </tr>
+                <tr>
+                    <td>2. Free Car Maintenance Checklist or Guide</td>
+                    <td>Provide a special discount on car parts, accessories, or upgrades like floor mats, seat covers, or performance parts.</td>
+                </tr>
+                <tr>
+                    <td>3. Exclusive Discount on Car Accessories or Parts</td>
+                    <td>If you're in the business of car modifications, offer a discount on car customizations, such as custom wheels, wraps, or performance enhancements.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

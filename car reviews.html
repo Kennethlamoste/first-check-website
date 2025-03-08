@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wheels and Deals</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("./images/background.png");
+            background-repeat: no-repeat;  
+            background-size: cover;  
+            background-position: center; 
+            font-family: Arial, sans-serif;
+            
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(14, 14, 80);
+            font-weight: 600;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--bg-color);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links li {
+                margin-top: 0.4rem;
+            }
+        }
+
+        .reviews {
+            margin-top: 5rem; 
+            padding: 30px;
+            text-align: center;
+        }
+
+        .info {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(221, 219, 228);
+            border-radius: 12px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .info h3 {
+            font-size: 32px;
+            font-weight: 600;
+            color: rgb(14, 14, 66);
+            margin-bottom: 1.5rem;
+            padding-top: 1rem;
+            border-bottom: 2px solid rgb(170, 169, 166); 
+            padding-bottom: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        
+        .info p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: rgb(12, 12, 12);
+            transition: color 0.3s ease;
+        }
+
+        .info p:hover {
+            color: rgb(85, 85, 85);
+        }
+
+        
+
+        .info:hover {
+            box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 480px) {
+            .info h3 {
+                font-size: 24px;
+            }
+
+            .info p {
+                font-size: 16px;
+            }
+
+            .info {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+     
+    <nav class="navbar">
+        <div class="logo"> 
+            <a href="Reviews"> The Wheels and Deals</a>
+        </div>
+     
+        <ul class="nav-links">     
+            <li><a href="./index.html">Home</a></li> 
+            <li><a href="./car reviews.html">Car Reviews</a></li>
+            <li><a href="./gallery.html">Gallery</a></li> 
+            <li><a href="./contact.html">Contact us</a></li> 
+            <li><a href="./special offer.html">Special Offer</a></li> 
+        </ul>
+    </nav>
+
+    <section class="reviews">
+        <div class="info">
+
+            <h3>1. Ford Raptor</h3>
+            <p>This latest addition to the American carmaker's local truck lineup will still come with a 2.0-liter bi-turbo diesel engine under the hood—same as the standard Ranger Raptor.
+            This unit churns out 210hp and 500Nm of torque, and is mated to a 10-speed automatic gearbox.</p>
+
+            <h3>2. Honda Civic</h3>
+            <p>Sporty Civic Sedan now comes with the efficiency and excitement of hybrid performance. 
+            Inside, an available Bose Premium Sound System, and seamless connectivity with Google built in.</p>
+
+            <h3>3. Toyota Hiace</h3>
+            <p>It will be every comfortable for your day trip experience with fully AC on it. The Toyota HiAce is a motor vehicle produced by the Japanese manufacturer Toyota.</p>
+
+            <h3>4. Ford Mustang</h3>
+            <p>We have 4-seater coupe with Rs 74.61 Lakh. Available in 1 variant, 4951 cc engine. 
+            Other key specifications of the Mustang include a ground clearance of 137mm.</p>
+
+            <h3>5. Nissan GTR</h3>
+            <p>The GTR-NISMO has a 3.8 L V6 engine with 6 cylinders and 24 valves and has a 6-speed dual-clutch transmission with paddle shifters and matching.</p>
+
+            <h3>6. Corvette</h3>
+            <p>You get from 0 to 60 in just under four seconds. Select 7-speed manual or 8-speed automatic transmission. 
+            Determine the trim, color, and options.</p>
+        </div>
+    </section>  
+</body>
+</html>

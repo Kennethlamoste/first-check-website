@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wheels and Deals</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("./images/background.png");
+            background-repeat: no-repeat;  
+            background-size: cover;  
+            background-position: center; 
+            font-family:Arial, sans-serif;
+        }
+        
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color:  rgb(14, 14, 80);
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--bg-color);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 700px) {
+          .navbar {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+            .nav-links li {
+                margin: 0.4rem;
+            }
+        }
+
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            padding: 0 8%;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            
+        }
+
+        .info {
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgb(10, 10, 73);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .info h1 {
+            font-size: 50px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            color: rgb(240, 240, 240);
+        }
+
+        .info h3 {
+            font-size: 35px;
+            color: rgb(228, 228, 228);
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            font-size: 25px;
+            font-weight: 400;
+            color: rgb(204, 204, 204);
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 18px;
+            background-color: rgb(30, 30, 243);
+            color: rgb(225, 232, 238);
+            text-decoration: none;
+            border: 2px solid blue;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: transparent;
+            color: rgb(31, 31, 221);
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(30, 30, 243, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="Home">The Wheels and Deals</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li> 
+            <li><a href="./car reviews.html">Car Reviews</a></li>
+            <li><a href="./gallery.html">Gallery</a></li> 
+            <li><a href="./contact.html">Contact us</a></li> 
+            <li><a href="./special offer.html">Special Offer</a></li>
+        </ul>
+    </nav>
+
+    <section class="home">
+        <div class="info">
+            <h1>Car Dealing Experience</h1>
+            <h3>Redefined!</h3>
+            <p>The Wheels and Deals offer the best in buying and selling cars. We provide quality cars with customization and performance upgrades to suit your needs.</p>
+            <a href="./gallery.html" class="button">Explore the Cars</a>
+        </div>
+    </section>
+    
+</body>
+</html>
